@@ -1,0 +1,130 @@
+Clarity PPM 16.4.0 – Chatbot Knowledge Document
+##Overview
+Clarity PPM 16.4.0 is a major release that focuses on usability, accessibility, reporting, resource management, financial transparency, and AI-driven capabilities. 
+This knowledge base is intended to answer functional, technical, and upgrade-related questions about Clarity PPM version 16.4.0.
+________________________________________
+##What Is New in Clarity PPM 16.4.0
+Clarity 16.4.0 introduces improvements across multiple areas of the product including accessibility compliance, modern UX enhancements, advanced reporting capabilities, improved resource planning tools, financial metrics standardization, and expanded AI agent functionality.
+This release continues Broadcom’s strategy of moving users away from Classic PPM and into the Modern UX while improving performance and usability.
+________________________________________
+##Accessibility and Usability Improvements
+Clarity 16.4.0 includes several accessibility improvements aimed at meeting compliance standards and improving usability for all users.
+Key improvements include:
+•	Better keyboard navigation across pages and components
+•	Improved screen reader compatibility
+•	Enhanced focus handling for interactive elements
+•	Improved left side navigation usability
+These changes improve the overall user experience, especially for users relying on assistive technologies.
+________________________________________
+
+##Resource Management Enhancements
+Resource management receives significant usability improvements in Clarity 16.4.0.
+Calendar Module
+A new calendar module allows resource managers to view and manage availability directly in the Modern UX without switching to Classic PPM.
+Base Calendar Enhancements
+Admins with appropriate access can now manage base calendars more easily using standardized rules.
+________________________________________
+##People Centric Planning and Metrics
+Clarity 16.4.0 improves visibility into resource utilization and planning metrics.
+New and enhanced metrics include:
+•	Allocation vs actual hours variance
+•	Remaining availability for resources
+•	Additional resource attributes such as license type and last login
+These metrics help managers make better staffing and planning decisions.
+________________________________________
+##Artificial Intelligence (AI) Capabilities
+Clarity continues to expand its AI functionality in version 16.4.0.
+AI enhancements include:
+•	Extended configuration options for AI agents
+•	Ability to define AI agents at object or workspace level
+•	Branding options for AI agents, including names and avatars
+These improvements allow organizations to align AI assistance with their internal processes and branding.
+________________________________________
+##Financial Management Enhancements
+Financial transparency is improved through standardized out of the box metrics.
+New or enhanced financial metrics include:
+•	Profit
+•	% Spend
+•	Actual Profit
+•	Forecast % of Cost
+•	Forecast Profit
+•	Forecast Remaining
+•	Planned to Forecast Variance
+More changes on Financials module: In Clarity 16.4.0, you can now view and analyze transactions across multiple currencies directly in the Posted Transactions and Actual Transactions grids.
+These metrics are available consistently across dashboards, reports, and investments.
+________________________________________
+##Upgrade and Support Considerations
+Upgrade Planning
+When upgrading to Clarity 16.4.0:
+•	Review upgrade documentation before starting
+•	Plan for scheduled downtime during upgrade windows
+•	Test customizations, integrations, and reports thoroughly
+Support and Deprecation Notes
+•	Support for CA Business Intelligence (Jaspersoft) will be removed in future releases
+•	Customers should plan migration to native Clarity reporting
+________________________________________
+##Summary
+Clarity PPM 16.4.0 delivers:
+•	Improved accessibility and usability
+•	Stronger native reporting
+•	Better resource and people planning
+•	Enhanced financial transparency
+•	Expanded AI capabilities
+•	A solid foundation for future upgrades
+
+##Release and Support Lifecycle
+•	Release 16.4.0 became generally available on Nov 10, 2025 for both SaaS and on-premise customers. 
+•	Support for Clarity 16.4.0 will continue through Nov 30, 2028 under Broadcom’s maintenance policy. 
+•	The legacy reporting tool CA Business Intelligence (Jaspersoft) is being deprecated and removed, particularly in SaaS where it will no longer be available after September 30, 2026.
+This info helps with upgrade planning and lifecycle context.
+##Action Items Enhancements: Previously, users could perform decision actions on Action Items, but could not provide contextual comments unless configured separately in a process step. This limited communication and traceability in approval workflows.
+In Clarity 16.4.0, Action Items have been enhanced to allow users to add comments directly within Clarity.
+
+##Changes Related to Rally: In previous releases, Frictionless Cost Accounting (FCA) calculations in Clarity relied solely on Rally story points to determine team productivity and cost distribution.
+In Clarity 16.4.0, a new Rally Calculation Method attribute introduces flexibility by allowing teams to choose between Points or Count when calculating FCA metrics. This enhancement better aligns with various Agile practices and improves the accuracy of cost and productivity analysis.
+##Upgrade Impact of Rally changes:
+After you upgrade: If both Frictionless Cost Accounting Mapping and Rally Team for Frictionless Cost Accounting attributes are configured in a Team Investment, Clarity automatically sets the Rally Calculation Method to Points during upgrade.
+If these attributes are not configured, the Rally Calculation Method is set to Null by default.
+Changes to Business Rules: For ADMIN
+Business rules in Clarity have been updated to include the following enhancements.
+You can now configure up upto 50 business rules per object, up upto a maximum of 250 per blueprint.
+The business rule name can now be up to 256 characters, up from 80 in previous releases.
+The Source Object attribute has been renamed to Target Object.
+
+##Include Notification Data in Health Report: For Admin
+Previously, the system health report provided administrators with details on background job performance, service status, and configuration checks, but did not include visibility into Clarity notification delivery status. This limited administrators’ ability to monitor email and in-app notification activity from a single diagnostic report.
+In Clarity 16.4.0, the Health Report has been enhanced to include notification-related data, giving administrators a comprehensive view of notification events, counts, and system-level details related to notification services. This addition helps administrators proactively identify and resolve notification-related issues, ensuring smoother communication between Clarity and end users.
+OBS Filter Enhancement:
+Previously, when filtering based on Organizational Breakdown Structure (OBS) attributes, users could only apply the 
+Is Empty
+ and 
+Is Equal To
+ operators. This limited flexibility when performing advanced filtering, particularly in scenarios requiring exclusion logic or visibility into non-null OBS associations.
+In Clarity 16.4.0, the OBS filtering capability has been enhanced to support two additional operators—
+Is Not Empty
+ and 
+Is Not Equal To
+. These operators are available across both Clarity and Reporting, enabling users to create more refined filters for OBS-based data and to improve reporting accuracy and usability.
+
+##Reporting and Data Visualization Enhancements
+Clarity 16.4.0 enhances native reporting capabilities to provide more flexibility and better insights.
+Key enhancements include:
+•	Improved placement and usability of report level filters
+•	Ability to configure per period metrics (daily, weekly, monthly) at different levels
+•	Improved visualization options for widgets like:
+o	Introducing the Ability to Switch Charts
+o	Widget Sizing and Adjustment Improvements
+o	Null Attribute will Display as None 
+o	Introducing the Starred Attribute
+o	Hide Borders for Widgets
+o	Enhanced Axis Customization
+o	New Line Chart Widgets is included.
+##New Reports OOTB:
+•	Capacity vs. Demand by Resource: Helps organizations identify overallocation, potential resource bottlenecks, and opportunities for better resource planning—previously available in Jaspersoft as resource utilization reports.
+•	Financial Budget vs. Forecast by Period: Enables accurate comparison of budgeted vs. forecasted spend, allowing finance teams to proactively address variances.
+•	KPIs by Project Type Dashboard: Offers instant analytics on key project metrics, highlighting areas for improvement and allowing continuous delivery optimization.
+
+
+These enhancements reduce dependency on legacy reporting tools and improve native analytics.
+________________________________________
+##For More Details: https://techdocs.broadcom.com/us/en/ca-enterprise-software/business-management/clarity-project-and-portfolio-management-ppm-on-premise/16-4-0/release-information/clarity-ppm-release-notes.html
